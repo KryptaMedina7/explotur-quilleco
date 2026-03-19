@@ -2,11 +2,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, Variants } from "framer-motion";
 import { MapPin, TreePine, Coffee, Users, Leaf, ArrowRight, Plus, Minus, Menu, X, MessageCircle } from "lucide-react";
 // Removemos next/image para los placeholders remotos para evitar el error de configuracion sin reiniciar el servidor
 
-const fadeInUp = {
+const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
 };
